@@ -44,18 +44,6 @@ export function LocalizationPreferences({ onChange, values }: Readonly<Localizat
                             <MenuItem key={value } value={value}>{ label }</MenuItem>
                         ))}
                     </Select>
-                    <FormHelperText component={Stack} id='display-settings-language-description'>
-                        <span>{globalize.translate('LabelDisplayLanguageHelp')}</span>
-                        { appHost.supports('externallinks') && (
-                            <Link
-                                href='https://github.com/jellyfin/jellyfin'
-                                rel='noopener noreferrer'
-                                target='_blank'
-                            >
-                                {globalize.translate('LearnHowYouCanContribute')}
-                            </Link>
-                        ) }
-                    </FormHelperText>
                 </FormControl>
             ) }
 

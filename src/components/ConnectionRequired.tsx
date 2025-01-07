@@ -65,7 +65,7 @@ const ConnectionRequired: FunctionComponent<ConnectionRequiredProps> = ({
                 try {
                     await alert({
                         text: globalize.translate('ServerUpdateNeeded', 'https://github.com/jellyfin/jellyfin'),
-                        html: globalize.translate('ServerUpdateNeeded', '<a href="https://github.com/jellyfin/jellyfin">https://github.com/jellyfin/jellyfin</a>')
+                        html: globalize.translate('ServerUpdateNeeded', 'Update')
                     });
                 } catch (ex) {
                     console.warn('[ConnectionRequired] failed to show alert', ex);
